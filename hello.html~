@@ -1,0 +1,73 @@
+<title>hello</title>
+<form id="form" name="form" method="get" action="/cgi-bin/input.cgi">
+<p>
+<input type="text" name="BBB" id="input" value="input.c">
+</p>
+<p>
+<input type="submit" name="AAA" id="submit" value="submit">
+</p>
+</form>
+----
+
+
+<CENTER><h1>table submit</h1>
+	<form action="/cgi-bin/cgi-test.cgi" method="get">  
+		<table>  
+		    <tr>  
+			<td>name:</td>
+			<td><input name="username"/></td>  
+		    </tr>  
+			<tr>  
+			<td>password:</td>  
+			<td><input name="password"/></td>  
+		    </tr>  
+		    <tr>  
+			<td><input type="submit" value="OK"/></td>  
+		    </tr>  
+		</table>  
+	</form>  
+</CENTER>
+<hr>
+
+<CENTER>
+<bgcolor=#fefefe>
+<form action="http://www.baidu.com" method="get">
+	<table>
+		<tr>
+			<td>name:</td>
+			<td><input type="text" NAME="name" value="name" maxlength="5"/></td>
+		</tr>
+	
+		<tr>
+			<td>password:</td>
+			<td><input type="password" password="password"/><td>
+		</tr>
+	</table>
+
+	<input type="checkbox" name="checkbox1" value="1">checkme
+	<input type="radio" name="radio" value="1" checked>radio
+	<input type="radio" name="radio" value="1" checked>radio2
+	<br>
+	<input type="reset"  value="reset">
+	<input type="submit"  value="submit">
+	<p>
+	<select name="selcet">
+		<option>small
+		<option>medium
+		<option>large
+	</select>
+	<data>
+
+</form>
+<table>
+<tr><td width=4350 heigth=500>
+<input type=file name=upfile maxlength=1280 length=1000></td>
+</tr>
+<br>
+<tr><td width=4350 heigth=500>
+<input type="reset"  value="reset">
+<input type="submit"  value="submit">
+</tr>
+</table>
+<CENTER>
+
