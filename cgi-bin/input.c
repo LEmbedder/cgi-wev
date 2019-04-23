@@ -7,25 +7,24 @@ void main()
 	//设置HTML语言
 	printf("Content-type:text/html\n\n");
 	printf("<title>hello</title>");
-	printf("%s<br><br>", getenv("QUERY_STRING"));
-	printf("%s<br><br>", getenv("REQUEST_METHOD"));//POST
-   	char szPost[256] = {0};
- 
-	//获取输入
-	gets(szPost);
- 
-        //打印输入的内容
-	printf("%s<br><br>", szPost);
-	#if 1
-	char *p = szPost + 4; 
-	char*p1 = strchr(szPost, '&');
-	*p1 = '\0';
+	printf("%s<br><br>", getenv("REQUEST_METHOD"));
+	char *pp = getenv("QUERY_STRING");
 
+	char pgetenv[256];
+	sprintf(pgetenv,"%s",pp);
+
+        //打印输入的内容
+	printf("%s<br><br>", pgetenv);
+
+	char *p = pgetenv + 4; 
+	char*p1 = strchr(pgetenv, '&');
+	*p1 = '\0';
+#if 1
 	char cmd[256] = {0};
 
 	//字符串映射
 	sprintf(cmd, "%s", p);
-
+	printf("%s<br><br>", cmd);
 
 	//以读的方式打开1.txt
 	FILE* fp = fopen(cmd, "r");
